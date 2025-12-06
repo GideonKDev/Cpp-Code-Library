@@ -1,0 +1,1 @@
+// cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
