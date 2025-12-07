@@ -95,3 +95,41 @@ int main()
 
     return 0;
 }
+
+// Break and continue
+// The break statement can also be used to jump out of a loop.
+// The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Example 1: Using 'break'
+    cout << "Example of break statement:" << endl;
+    for (int i = 1; i <= 10; i++)
+    {
+        if (i == 5)
+        {
+            // When i equals 5, exit the loop immediately
+            break; // terminates the loop
+        }
+        cout << i << " "; // prints numbers 1 to 4
+    }
+    cout << endl
+         << endl;
+
+    // Example 2: Using 'continue'
+    cout << "Example of continue statement:" << endl;
+    for (int i = 1; i <= 10; i++)
+    {
+        if (i % 2 == 0)
+        {
+            // If i is even, skip this iteration and go to the next
+            continue; // skips the remaining code in this iteration
+        }
+        cout << i << " "; // prints only odd numbers: 1, 3, 5, 7, 9
+    }
+    cout << endl;
+
+    return 0;
+}
