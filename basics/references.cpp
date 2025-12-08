@@ -1,17 +1,17 @@
 // A reference variable is an alias for an existing variable. It is created using the & operator
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
-int main()
-{
-    string food = "Pizza";
-    string &meal = food;
+// int main()
+// {
+//     string food = "Pizza";
+//     string &meal = food;
 
-    cout << food << "\n";
-    cout << meal << "\n";
-    return 0;
-}
+//     cout << food << "\n";
+//     cout << meal << "\n";
+//     return 0;
+// }
 
 // Updating Through References
 // If you change the value of a reference variable, the original variable will also change (and vice versa), because they both refer to the same memory location

@@ -59,6 +59,7 @@ int main()
     // Access the memory address of food and output its value
     cout << *ptr << "\n";
 
+    
     // Change the value of the pointer
     *ptr = "Hamburger";
 

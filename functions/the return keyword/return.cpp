@@ -9,6 +9,11 @@ int multiply(int x, int y)
 
 int main()
 {
-    cout << multiply(2, 3);
+    int num1;
+    int num2;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+    cout << multiply(num1, num2);
     return 0;
 }
