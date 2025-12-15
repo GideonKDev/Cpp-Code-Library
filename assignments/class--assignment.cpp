@@ -3,7 +3,7 @@ A customer requires ID number, Name and Opening balance to open an account.
 Once the account is open, the customer can check the balance of the account, deposit
  and withdraw some amount from the account.
 
- create a program*/
+ create a program using classes*/
 
  /*program bluePrint
  class: AccountHolder
