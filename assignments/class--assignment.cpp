@@ -28,7 +28,7 @@ Once the account is open, the customer can check the balance of the account, dep
 
  class AccountHolder{
  private:
-    int IdNumber, Balance;
+    int IdNumber, Balance,choice;
     string Name;
 
 public:
@@ -41,6 +41,7 @@ public:
     void checkBalance();
     void withdraw();
     void deposit();
+    void getChoice();
 
  };
 
@@ -97,17 +98,46 @@ public:
     cout<<"Your new Balance: "<<Balance<<endl;
  }
 
+void AccountHolder::getChoice(){
+   cout<<"Welcome to your Account Management System"<<endl;
+   cout<<"Choose an option from the following menu: "<<endl;      
+   cout<<"1. Check Balance"<<endl;
+   cout<<"2. Deposit Money"<<endl;
+   cout<<"3. Withdraw Money"<<endl;
+   cout<<"4. Exit"<<endl;
+   cout<<"Enter your choice: ";
+   cin>>choice;
 
+   switch(choice){
+      case 1:
+         checkBalance();
+         break;
+      case 2:
+         deposit();
+         break;
+      case 3:
+         withdraw();
+         break;
+      case 4:
+         cout<<"Thank you for using our services. Goodbye!"<<endl;
+         break;
+
+      default:
+         cout<<"Invalid choice. Please try again."<<endl;
+         getChoice();
+         break;
+   }
+}
 
 
  int main(){
     AccountHolder Customer;
-    Customer.setName();
-    Customer.setID();
-    Customer.setInitialBalance();
-    Customer.deposit();
-    //Customer.checkBalance();
-    Customer.withdraw();
-    Customer.getDetails();
+
+      Customer.setName();
+      Customer.setID();
+      Customer.setInitialBalance();
+      Customer.getDetails();
+      Customer.getChoice();
+      return 0;
 
  }
