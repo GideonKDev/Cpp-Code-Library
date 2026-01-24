@@ -50,7 +50,7 @@ Vehicle::Vehicle(){
 void Vehicle::inputData(){
     cout<<"Enter the Plate Number of the vehicle: ";
     getline(cin, plateNumber);
-
+-
     cout<<"Model of the vehicle:  ";
     getline(cin, model);
 
