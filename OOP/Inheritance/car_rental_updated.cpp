@@ -12,8 +12,8 @@ protected:
 
 public:
     Vehicle();
-    void inputData();
-    void display();
+   virtual void inputData();
+   virtual void display();
 };
 
 Vehicle::Vehicle() {
