@@ -56,6 +56,7 @@ public:
             start++;
             end--;
         }
+
     }
     void display(){
         for(int i=0;i<size;i++){
@@ -80,3 +81,13 @@ int main(){
 
     return 0;
 }
+/*Sample Input/Output:
+Enter element 1: 8
+Enter element 2: 3
+Enter element 3: 10
+Enter element 4: 2
+Enter element 5: 7
+Original array: 8, 3, 10, 2, 7
+Minimum value: 2
+Reversed array: 7, 2, 10, 3, 8
+*/
